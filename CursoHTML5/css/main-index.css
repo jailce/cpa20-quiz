@@ -1,0 +1,525 @@
+@import url("font/stylesheet.css");
+
+/** LAST VERSION 05-07-2019 - 12:01
+ * OLD VESIONS
+
+ *
+/* ---------------------------------------------- /*
+ * General styles
+/* ---------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	max-width: 100vw;
+}
+html {
+	text-rendering: optimizeLegibility;
+}
+body {
+	text-align: left;
+	font-family: 'calibri', arial;
+	color: #555;
+	background-color: #fff;
+
+	
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+	body{
+		font-size: 16px;
+	}
+
+
+
+}
+@media (min-width: 767.98px) { 
+	body{
+		font-size: 18px;
+	}
+
+
+
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	color: #fff;
+}
+a:hover {
+	color: #737373;
+}
+img {
+	max-width: 100%;
+}
+a img {
+	border: 0;
+}
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+/*
+Guia de Fontes Sicredi : CSS
+@import url("font/stylesheet.css");
+
+
+Calibri
+
+-- REGULAR --
+font-family: 'calibri', sans serif ;
+
+-- REGULAR ITALIC --
+font-family: 'calibril', sans serif ;
+
+
+Exo 2
+
+font-family: 'Exo 2', sans serif ;
+
+-- THIN --
+font-weight: 100;
+
+-- THIN ITALIC --
+font-weight: 100;
+font-style: italic;
+
+-- LIGHT --
+font-weight: 300;
+
+-- LIGHT ITALIC --
+font-weight: 300;
+font-style: italic;
+
+-- REGULAR --
+font-weight: 400;
+
+-- REGULAR ITALIC --
+font-weight: 400;
+font-style: italic;
+
+-- BOLD --
+font-weight: 700;
+
+-- BOLD ITALIC --
+font-weight: 700;
+font-style: italic;
+
+-- EXTRA BLACK --
+font-weight: 900;
+
+-- EXTRA BLACK ITALIC --
+font-weight: 900;
+font-style: italic;
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Exo 2', sans serif;
+}
+h1 {
+	font-weight: 300; /*THIN*/
+	color: #006633;
+	line-height: 1;
+	font-size: 3.5em;
+}
+h1 > em {/*ITALICO*/
+	font-weight: 300;
+	font-style: italic;
+	
+}
+
+h2 {
+	font-weight: 700;/*BOLD*/
+	color: #006633;
+	font-size: 2.1em;
+
+}
+h2 > em {
+	font-weight: 700;
+	font-style: italic;
+}
+
+h4 {
+	font-weight: 700; 
+	color: #66cc33;
+	font-size: 1.8em;
+}
+h4 > em { /*ITALICO*/
+	font-style: italic;
+}
+h5 {
+	font-weight: 400; /*REGULAR*/
+	color: #333;
+	font-size: 1.1em;
+	;
+}
+h5 > em {/*ITALICO*/
+	font-style: italic;
+}
+h5 > strong {
+	color: #66cc33;
+	font-weight:700;
+}
+h6 {
+	font-weight: 700;/*BOLD*/
+	color: #333;
+	font-size: 1.3em;
+	line-height: 1;
+}
+h6 > em {/*ITALICO*/
+	font-style: italic;
+}
+h6 > strong {
+	color: #66cc33;
+	font-weight: 700;
+}
+p {
+	font-family: 'calibri', sans serif;
+	color: #666;
+	font-size: 1em;
+	margin-bottom:0.5em;
+	line-height: 1.2;
+}
+p > em {
+	font-family: 'calibril', sans serif;
+}
+p > strong {
+	font-weight: 700;
+}
+
+
+li {
+	list-style-type: none;
+	line-height: 1.25;
+	margin:0.8rem 0;
+	
+}
+li > i {
+	margin-right: 4px;
+	margin-bottom: auto;
+	font-size:1rem;
+}
+
+
+
+
+
+/* ---------------------------------------------- /*
+
+ * <hr> personalizado, usar <div class="hrcap"> </div>
+
+/* ---------------------------------------------- */
+/* <div class="col hrcap"> </div> */
+
+.hrcap {
+	margin: 1rem 0;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	
+}
+/* ---------------------------------------------- /*
+
+ * TRACO DECORATIVO TITULO DA CAPA
+
+/* ---------------------------------------------- */
+
+
+.tracoverde-capa {
+	width: 4rem;
+	height: 3px;
+	background-color: #66cc33;
+	margin: 5px auto;
+}
+
+
+.conteudoprogramatico {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+/* ---------------------------------------------- /*
+
+ * TOPICOS ABORDADOS
+
+/* ---------------------------------------------- */
+#conteudo01 {
+	
+	margin: 1rem 0;
+	
+}
+
+.topicos-abordados {
+	margin:2.5rem  0 ;
+}
+
+.topicos-abordados > .lista_topicos {
+	list-style: none;
+
+
+}
+.topicos-abordados >.lista_topicos li {
+	text-align: left;
+	font-weight: 600;
+
+}
+.topicos-abordados > .lista_topicos i {
+	color:#66cc33;
+	font-size: 1rem;
+
+}
+
+.c-inner {
+	margin:2.5rem  0 ;
+}
+/* ---------------------------------------------- /*
+
+ * BOTAO MODAL
+
+/* ---------------------------------------------- */
+.btn,
+.btn-info {
+	font-family: 'Exo 2', sans-serif;
+	display: inline-block;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: auto;
+	height: auto;
+	padding: 0.8rem;
+	font-size: 1rem;
+	line-height: 1.4;
+	border-radius: 6px;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #66cc33;
+	cursor: pointer;
+	display: block;
+	max-width: 600px;
+	max-height: 100px;
+	min-width: 280px;
+	border: 1px solid rgba(0, 0, 0, 0);
+;
+	-webkit-box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.18);
+	box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.18);
+}
+.btn :hover,
+.btn-info:hover {
+	color: #fff;
+	background-color: #66cc33;
+	transform: scale(1.05);
+	border: 1px solid rgba(0, 0, 0, 0);
+	transition: all .4s ease-in-out;
+	-webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+}
+
+/* ---------------------------------------------- /*
+
+ * BOTAO VERDE
+
+/* ---------------------------------------------- */
+
+.btnverde {
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #66cc33;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 1em;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	border-radius: 4px;
+	display: block;
+	max-height: 100px;
+}
+
+.btnverde:hover {
+	transform: scale(1.05);
+	transition: all .4s ease-in-out;
+		-webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+}
+	
+.btnverde  h2 {
+	font-size: 1rem;
+	color: #333;
+	position: relative;
+	pointer-events: none;
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.03rem;
+}
+.btnverde::before {
+	--size: 0;
+	content: '';
+	position: absolute;
+	border-radius: 1000px;
+	left: 50%;
+	top: 50%;
+	width: var(--size);
+	height: var(--size);
+	background: rgba(51, 51, 51, 0.1);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: width .4s ease, height .4s ease;
+}
+.btnverde::after {
+	--size: 0;
+	content: '';
+	position: absolute;
+	border-radius: 1000px;
+	left: 50%;
+	top: 50%;
+	width: var(--size);
+	height: var(--size);
+	background: rgba(51, 51, 51, 0.1);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: width .4s ease, height .4s ease;
+}
+.btnverde:hover::before {
+	--size: 400PX;
+	content: '';
+	position: absolute;
+	border-radius: 1000px;
+	left: 50%;
+	top: 50%;
+	width: var(--size);
+	height: var(--size);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: width .4s ease, height .4s ease;
+}
+.btnverde:active::after {
+	--size: 400PX;
+	content: '';
+	position: absolute;
+	border-radius: 1000px;
+	left: 50%;
+	top: 50%;
+	width: var(--size);
+	height: var(--size);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: width .2s ease, height .3s ease;
+}
+
+}
+.btnverde:active {
+
+	
+}
+.btnverde a{
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+}
+/*FIM*/
+
+/*============== Esquema para as perguntas...*/
+.respostas{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.optResp{
+	cursor: pointer;
+	padding: 5px 5px;
+	display: block;
+	font-size: 15px;
+}
+/*============== Esquema para as perguntas...*/
+.conteudoTabela{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.conteudoTabela table{
+	max-width: 100%;
+}
+
+.classTesteOculta{
+	display: none;
+}
+
+@media (max-width: 450px)
+{
+
+	.classTeste, 
+	.classTeste1, 
+	.classTeste2, 
+	.classTeste3,
+	.classTeste4,
+	.classTeste5,
+	.classTeste6
+	{
+		display:none;
+	}
+
+	.classTesteOculta{
+		display: inline-block;
+	}
+	
+	
+}
+/* ---------------------------------------------- /*
+
+ * RODAPE
+
+/* ---------------------------------------------- */
+footer {
+	width: 100%;
+	height: 200px;
+	background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* ff3.6+ */
+	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(209, 209, 209, 1)));
+	/* safari4+,chrome */
+	
+	background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* safari5.1+,chrome10+ */
+	
+	background: -o-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* opera 11.10+ */
+	
+	background: -ms-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* ie10+ */
+	
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* w3c */
+	
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#D1D1D1', GradientType=0);
+	/* ie6-9 */
+}
+
+
+
+
+section{
+	padding-top: 150x;
+}

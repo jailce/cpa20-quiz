@@ -1,0 +1,461 @@
+
+
+
+.banner {
+	/*capa da pagina cap03*/
+	background-image: url('../img/capa4.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+
+}
+
+
+
+
+.titulo-cap {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	top: 26vh;
+	left: 0vw;
+	height: 100vh;
+	padding: 0 2rem;
+}
+
+.titulo-cap h1 {
+	position: relative;
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0;
+	font-size: 3.3rem;
+	word-wrap: normal;
+
+}
+.titulo-cap-mob {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	top: 26vh;
+	left: 0vw;
+	height: 100vh;
+	padding: 0 1rem;
+}
+.titulo-cap-mob h1 {
+	position: relative;
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0;
+	font-size: 2.4rem;
+	word-wrap: normal;
+
+}
+
+
+li{
+	font-family: 'Exo 2', sans-serif;
+	color: #666;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+p {
+	font-family: 'Exo 2', sans-serif;
+	color: #666;
+	font-weight: 500;
+	font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+hr {
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lista_topicos_01{
+	list-style: none;
+    width: 22rem;
+    
+}
+
+.lista_topicos_01 li{
+	text-align: left;
+	font-weight: 500;
+	margin: 10px 0px;
+}
+
+.lista_topicos_01 i{
+	color: #66cc33;
+}
+
+
+
+
+.containerPadding{
+	padding: 10px 20px;
+}
+
+.txtLeft{
+	text-align: left;
+}
+
+.classSpan{
+	font-family: 'Exo 2', sans-serif;
+	color: #66cc33;
+	font-weight: bold;
+}
+
+
+
+.areaTabs, .modal-content, .modal-body{
+	font-family: 'Exo 2', sans-serif;
+}
+
+/* ---------------------------------------------- /*
+
+ * TABELAS
+
+/* ---------------------------------------------- */
+table {
+	border-collapse: separate;
+	border-spacing: 4px;
+	font-family: 'Exo 2', sans-serif;
+	margin: auto auto;
+}
+thead th {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+}
+tbody th {
+	text-transform: lowcase;
+	color: #006633;
+	font-weight: 400;
+}
+tbody td {
+	text-transform: lowcase;
+	color: #555;
+	font-family: 'calibri', san serif;
+	font-size: 18px;
+}
+.tdrow-escura th,
+.tdrow-escura td {
+	background-color: #e6e6e6;
+}
+.tdrow-clara th,
+.tdrow-clara td {
+	background-color: #f2f2f2;
+}
+.tcell-vazia {
+	background-color: rgba(255, 255, 255, 0);
+}
+.tcell-head {
+	background-color: #63cc33;
+}
+
+.tcell-head2 {
+	background-color: #006633;
+	color: #fff;
+}
+
+thead th:last-child {
+	border-top-right-radius: 25px;
+}
+tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 25px;
+}
+tbody tr:last-child th:first-child {
+	border-bottom-left-radius: 25px;
+}
+.tabela01 {
+	max-width: 800px;
+	max-height: 382px;
+}
+.tabela02 {
+	max-width: 700px;
+	max-height: 385px;
+}
+.tabela03 {
+	max-width: 932px;
+	max-height: 320px;
+}
+
+/* ---------------------------------------------- /*
+
+ * FIM DE TABELAS
+
+/* ---------------------------------------------- */
+
+h1, h2, h6{
+	text-align: center;
+
+
+}
+#previdencia{
+    width: 10rem;
+}
+
+.teste{
+    background-color: #D7E6C8;
+    padding: 1rem;
+    border-radius: 0px 16px 16px 16px;
+    width: auto;
+	margin: 30px 2rem;
+	
+		
+}
+.teste h5{
+    color: #666;
+}
+
+.teste2{
+    background-color: #63cc33;
+    padding: 1rem;
+    border-radius: 0px 16px 16px 16px;
+    width: auto;
+	margin: 30px 2rem;
+}
+.teste2 p{
+	color: #fff;
+	text-align: center;
+}
+
+.teste3{
+    background-color: #D7E6C8;
+    padding: 15px;
+    border-radius: 0px 16px 16px 16px;
+    width: 20rem;
+	margin: 30px auto;
+}
+
+
+.teste4{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0px 16px 16px 16px;
+    width: 20rem;
+	margin: 30px auto;
+}
+
+@media (max-width: 420px)
+{
+ 
+
+
+	
+}
+
+/*.row{
+    margin-bottom: 10px;
+}*/
+
+.classTeste{
+	border: 2px solid #006633;
+	color: #006633;
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+}
+
+.classTeste2{
+	border: 2px solid #006633;
+	color: #006633;
+	width: 260px;
+	display: inline-block;
+	text-align: center;
+}
+
+.classTeste3{
+	border: 2px solid #006633;
+	width: 220px;
+	display: inline-block;
+	text-align: center;
+}
+
+.classTeste4{
+	border: 2px solid #006633;
+	width: 180px;
+	display: inline-block;
+	text-align: center;
+}
+
+.classTeste5{
+	border: 2px solid #006633;
+	width: 140px;
+	display: inline-block;
+	text-align: center;
+}
+
+.classTeste6{
+	border: 2px solid #006633;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+}
+
+.contextos p{
+	color:#666;
+}
+
+
+.backgroundVerdeAgua{
+	background: #D7E6C8;
+}
+
+.tstMain{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.contextos{
+	max-width: 70%;
+	margin: auto auto;
+}
+
+/*Esquema para as perguntas...*/
+.respostas{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.optResp{
+	cursor: pointer;
+	padding: 5px 5px;
+	display: block;
+	font-size: 15px;
+}
+
+.nav-link, .link{
+	font-style: italic;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 10px;
+}
+.nav-item a {
+	color: #64c832;
+	font-size: 18px;
+	font-style: italic;
+}
+
+#cap01, #cap02, #cap03, #cap04, #cap05{
+	text-transform: uppercase;
+  }
+  @media (max-width: 550px){
+	#cap01, #cap02, #cap03, #cap04, #cap05{
+	  font-size: 10px;
+	}
+	
+  }
+
+
+
+
+
+.hrcap {
+	margin: 1rem 0;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	
+}
+/*--------------------------------------------- /*
+
+ * TOPICOS ABORDADOS
+
+/* ---------------------------------------------- */
+#conteudo01 {
+	
+	
+	
+}
+
+.topicos-abordados {
+	margin:2.5rem  0 ;
+}
+
+.topicos-abordados > .lista_topicos {
+	list-style: none;
+
+
+}
+.topicos-abordados >.lista_topicos li {
+	text-align: left;
+	font-weight: 600;
+
+}
+.topicos-abordados > .lista_topicos i {
+	color:#66cc33;
+	font-size: 1rem;
+
+}
+
+
+
+
+/*FIM*/
+
+/*============== Esquema para as perguntas...*/
+.respostas{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.optResp{
+	cursor: pointer;
+	padding: 5px 5px;
+	display: block;
+	font-size: 15px;
+}
+/*============== Esquema para as perguntas...*/
+.conteudoTabela{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.conteudoTabela table{
+	max-width: 100%;
+}
+
+.classTesteOculta{
+	display: none;
+}
+
+@media (max-width: 450px)
+{
+
+	.classTeste, 
+	.classTeste1, 
+	.classTeste2, 
+	.classTeste3,
+	.classTeste4,
+	.classTeste5,
+	.classTeste6
+	{
+		display:none;
+	}
+
+	.classTesteOculta{
+		display: inline-block;
+	}
+	
+	
+}
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px, 0, 0);
+	transition: .3s;
+}
+
+.animeStart {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}

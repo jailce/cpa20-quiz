@@ -1,0 +1,854 @@
+@import url("font/stylesheet.css");
+@import url("../icons/sicredui-font/css/style.css");
+
+:root {
+	--white: #ffffff;
+	--light: #cccccc;
+	--black: #333333;
+	--grey: #666666;
+	--teal: #D7E6C8;
+	--green: #66cc33;
+	--dark-green: #006633;
+}
+
+
+
+section {
+	padding: 0px 0;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	padding: 1.5rem 15px;
+    
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 920px;
+	
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 920px;
+
+
+	}
+}
+
+/* ---------------------------------------------- /*
+
+ * Título do Conteudo
+
+/* ---------------------------------------------- */
+@media screen and (max-width: 767.98px) {
+	body {
+		font-size: 15px;
+
+	}
+	.pad{
+		margin-left:15px;
+	}
+	.t-cont, .t-cont-left {
+		/*h2*/
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		/*BOLD*/
+		color: #006633;
+		font-size: 2.1em;
+		text-align: left;
+		padding-left: 15px;
+		padding-right: 15px;
+
+
+	}
+		.t-sub-left, .t-sub-center {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		color: 333333;
+		font-size: 1rem;
+		line-height: 1;
+		margin-bottom: 1rem;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+		max-width: 720px;
+
+	}
+
+	.cont-inner, .cont-inner-left {
+		/*texto*/
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+		line-height: 1.2;
+		text-align: left;
+	}
+
+	.rwd-break {
+		display: none;
+	}
+	
+	
+
+
+}
+@media screen and (min-width: 767.98px) {
+	body {
+		font-size: 18px;
+
+	}
+
+
+	.t-cont {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		/*BOLD*/
+		color: #006633;
+		font-size: 2.1em;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+		
+		
+	}
+
+	.t-sub-center {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		color: 333333;
+		font-size: 1rem;
+		line-height: 1.1;
+		margin-bottom: 1rem;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 720px;
+		
+		
+
+
+	}
+
+	.t-sub-left {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		color: 333333;
+		font-size: 1rem;
+		line-height: 1.1;
+		margin-bottom: 1rem;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+		max-width: 720px;
+
+	}
+		.cont-inner {
+		/*texto*/
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		line-height: 1.2;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+		width: auto;
+		max-width: 720px;
+	
+
+
+	}
+		.cont-inner-left {
+		/*texto*/
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		line-height: 1.2;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.5rem;
+		width: auto;
+		max-width: 720px;
+		
+	}
+	
+			.rwd-break {
+		display: block;
+	}
+
+	
+	
+}
+	
+	
+
+}
+/*-------*/
+
+
+
+
+.t-topico {
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		line-height: 1.2;
+		text-align: left;
+	
+		width: auto;
+		max-width: 720px;
+	}
+
+
+.txt-box {
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1.1rem;
+		line-height: 1.2;
+		text-align:left;
+		margin-left: auto;
+		margin-right: auto;
+		
+		width: auto;
+	
+
+
+}
+
+.txt-box-ft {
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		line-height: 1.1;
+		text-align:left;
+		margin-left: auto;
+		margin-right: auto;
+		
+		width: auto;
+		
+
+
+}
+.txt-box-center {
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1.1rem;
+		line-height: 1.2;
+		text-align:center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+		width: auto;
+		max-width: 720px;
+
+
+}
+.txt-li {
+	list-style-type: none;
+	line-height: 1.25;
+	margin: 0.8rem 0;
+	font-family: 'Calibri', sans serif;
+	font-size: 1rem;
+
+
+
+}
+
+/* ---------------------------------------------- /*
+ * General styles
+/* ---------------------------------------------- */
+
+
+.cp {
+	padding: 42px 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	max-width: 100vw;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	text-align: left;
+	font-family: 'Calibri', arial;
+	color: #555;
+	background-color: #fff;
+
+
+}
+
+body > em {
+	font-family: 'Calibri', sans serif;
+	font-style: italic;
+}
+
+body > strong {
+	font-weight: 700;
+	/*// Small devices (landscape phones, less than 768px)*/
+
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Exo 2', sans serif;
+}
+
+h1 {
+	font-weight: 300;
+	/*THIN*/
+	color: white;
+	line-height: 1;
+	font-size: 3.5rem;
+}
+
+h1 > em {
+	/*ITALICO*/
+	font-weight: 300;
+	font-style: italic;
+
+}
+
+h2 {
+	font-weight: 700;
+	/*BOLD*/
+	color: #006633;
+	font-size: 2.1rem;
+
+}
+
+h2 > em {
+	font-weight: 700;
+	font-style: italic;
+}
+
+h3, h4, h5, h6 {
+	font-weight: 700;
+	/*BOLD*/
+	color: 333333;
+	font-size: 1rem;
+	line-height: 1;
+	margin-bottom: 1rem;
+}
+
+h3 > em {
+	/*ITALICO*/
+	font-style: italic;
+}
+
+
+
+
+h3 > strong {
+	color: #66cc33;
+	font-weight: 700;
+}
+
+p {
+	font-family: 'Calibri', sans serif;
+	color: #666;
+	font-size: 1rem;
+	margin-bottom: 0.5em;
+	line-height: 1.2;
+}
+
+p > em {
+
+	font-family: 'Calibri';
+  font-style: italic;
+}
+
+p > strong {
+	font-weight: 700;
+	color:#66cc33;
+	font-family: 'Calibri';
+ 
+}
+
+.vtab {
+	background-color: #f5f5f5;
+	border: 1px solid #dddddd;
+	color: #777;
+	line-height: 1.1;
+}
+.active {
+	color: #fff;
+	border: 1px solid #66cc33;
+	background-color: #66cc33;
+}
+.vtab a {
+	background-color: #66cc33;
+	color: #333333;
+	border: 4px solid #ccc;
+	text-decoration: none;
+	text-align: left;
+}
+.nav-link {
+	font-weight: 400;
+	text-align: left;
+}
+.vtab:hover {
+	background-color: #66cc33;
+	color: #fff;
+	border: 1px solid #ddd;
+}
+.tab-pane span {
+	color: #66cc33;
+	font-weight: 600;
+}
+.tab-pane {
+	color: #333333;
+	border: 1px solid #ccc;
+	padding: 15px;
+	background-color: #fff;
+	display: flex;
+	text-align: left;
+}
+.box-linha{
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: auto;
+	height: auto
+	min-width: 300px;
+	min-height: 210px;
+	position: relative;
+	background-color: #66cc33;
+	padding: 1rem;
+}
+
+.box-verde{
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: auto;
+	height: auto
+	min-width: 300px;
+	min-height: 210px;
+	position: relative;
+	background-color: #66cc33;
+	padding: 1rem;
+}
+
+.box-claro{
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: auto;
+	height: auto
+	min-width: 300px;
+	min-height: 210px;
+	position: relative;
+	background-color: #D7E6C8;
+	padding: 1rem;
+}
+
+.box-claro-c6{
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: 400px;
+	height: auto
+	position: relative;
+	background-color: #66cc33;
+	padding: 1rem;
+}
+
+.navbar{
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+	    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16)
+}
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- 
+/*
+Guia de Fontes Sicredi : CSS
+@import url("font/stylesheet.css");
+
+
+Calibri
+
+-- REGULAR --
+font-family: 'calibri', sans serif ;
+
+-- REGULAR ITALIC --
+font-family: 'calibril', sans serif ;
+
+
+Exo 2
+
+font-family: 'Exo 2', sans serif ;
+
+-- THIN --
+font-weight: 100;
+
+-- THIN ITALIC --
+font-weight: 100;
+font-style: italic;
+
+-- LIGHT --
+font-weight: 300;
+
+-- LIGHT ITALIC --
+font-weight: 300;
+font-style: italic;
+
+-- REGULAR --
+font-weight: 400;
+
+-- REGULAR ITALIC --
+font-weight: 400;
+font-style: italic;
+
+-- BOLD --
+font-weight: 700;
+
+-- BOLD ITALIC --
+font-weight: 700;
+font-style: italic;
+
+-- EXTRA BLACK --
+font-weight: 900;
+
+-- EXTRA BLACK ITALIC --
+font-weight: 900;
+font-style: italic;
+*/
+
+
+
+/* ---------------------------------------------- /*
+
+ *  NAVBAR
+
+/* ---------------------------------------------- */
+
+.nav-sicredi {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+	padding: 0;
+	height: 50px;
+	width: 100%;
+}
+
+
+.nav-brand img {
+	display: flex;
+	margin: auto 0;
+}
+
+
+
+/* ---------------------------------------------- /*
+
+ * <hr> personalizado, usar <div class="hrcap"> </div>
+
+/* ---------------------------------------------- */
+/* <div class="col hrcap"> </div> */
+
+hr {
+	margin: 1rem 0;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+/* ---------------------------------------------- /*
+
+ * TRACO DECORATIVO TITULO DA CAPA
+
+/* ---------------------------------------------- */
+
+
+.tracoverde-capa {
+	width: 4rem;
+	height: 3px;
+	background-color: #66cc33;
+	margin: 5px auto;
+}
+
+
+
+
+
+/* ---------------------------------------------- /*
+
+ * TOPICOS ABORDADOS
+
+/* ---------------------------------------------- */
+/*
+#conteudo01 {}
+
+.topicos-abordados {
+	margin: 2.5rem 0;
+}
+
+.topicos-abordados > .lista_topicos {
+	list-style: none;
+
+
+}
+
+.topicos-abordados > .lista_topicos li {
+	text-align: left;
+	font-weight: 600;
+
+}
+
+.topicos-abordados > .lista_topicos i {
+	color: #66cc33;
+	font-size: 1rem;
+
+}
+
+.c-inner {
+	margin: 2.5rem 0;
+}
+*/
+
+/* ---------------------------------------------- /*
+
+ * BOTAO MODAL
+
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- /*
+
+ * BOTAO VERDE
+
+/* ---------------------------------------------- */
+
+
+/*FIM*/
+
+/*============== Esquema para as perguntas...*/
+.respostas {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.optResp {
+	cursor: pointer;
+	padding: 5px 5px;
+	display: block;
+	font-size: 15px;
+}
+
+/*============== Esquema para as perguntas...*/
+.conteudoTabela {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.conteudoTabela table {
+	max-width: 100%;
+}
+
+.classTesteOculta {
+	display: none;
+}
+
+@media (max-width: 450px) {
+
+	.classTeste,
+	.classTeste1,
+	.classTeste2,
+	.classTeste3,
+	.classTeste4,
+	.classTeste5,
+	.classTeste6 {
+		display: none;
+	}
+
+	.classTesteOculta {
+		display: inline-block;
+	}
+
+
+}
+
+/* ---------------------------------------------- /*
+
+ * RODAPE
+
+/* ---------------------------------------------- */
+footer {
+	width: 100%;
+	height: 200px;
+	background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* ff3.6+ */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(209, 209, 209, 1)));
+	/* safari4+,chrome */
+
+	background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* safari5.1+,chrome10+ */
+
+	background: -o-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* opera 11.10+ */
+
+	background: -ms-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* ie10+ */
+
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 1) 100%);
+	/* w3c */
+
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#D1D1D1', GradientType=0);
+	/* ie6-9 */
+}
+
+.h-icon{
+	max-height: 70px;
+}
+
+.w-icon {
+	max-width: 120px;
+}
+.icon-margin{
+	margin: 1rem auto;
+}
+
+section {
+	padding-top: 150x;
+}
+
+.texto-branco{
+	color: #fff;
+}
+
+.texto-verde{
+	color: #66cc33;
+}
+
+.texto-claro{
+	color: #D7E6C8;
+}
+
+.texto-cinza{
+	color: #666;
+}
+
+.texto-dark{
+ color: #333;
+}
+
+/*-------------------------*/
+.bg-branco{
+	background-color: #f5f5f5;
+}
+
+.bg-verde{
+	background-color: #66cc33;
+}
+
+.bg-claro{
+	background-color: #D7E6C8;
+}
+
+.bg-cinza{
+	background-color: #666;
+}
+.bg-prata{
+	background-color: #ccc;
+}
+.bg-dark{
+	background-color: #333;
+}
+.bordim{
+	border:1px solid #66cc33;
+}
+.boxim-grupo{
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: auto;
+	height: auto;
+	position: relative;
+	min-height: 80px;
+	padding: 1rem 0.8rem ;
+	margin: 1rem auto;
+	
+	}
+.b-grupo > h3{
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	margin:auto 0;
+}
+.bg-bens{
+	max-width: 400px;
+	min-width: 220px;
+	height: 50px;
+	border-radius: 50px;
+	padding: 1rem;
+	align-items: center;
+	
+}
+
+.boxim0{
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: auto;
+	height: auto;
+	position: relative;
+	padding: 0.8rem 0.8rem ;
+	margin: 1rem auto;
+	
+	}
+
+.boxim-bola{
+	border-radius:50%;
+	-moz-border-radius: 50%;
+	max-width: 70px;
+	max-height: 70px;
+	position: relative;
+	padding: 1rem;
+	margin: 1rem auto;
+	line-height: 
+	}
+
+.box-c07 {
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	min-height: 188px;
+	min-height: 280px;
+	height: auto;
+	width: auto;
+	margin: 1rem 0;
+	position: relative;
+	padding: 1rem;
+}

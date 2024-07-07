@@ -1,0 +1,524 @@
+
+/* ---------------------------------------------- /*
+
+ * HEADER
+
+/* ---------------------------------------------- */
+
+.containerFormatada h1 {}
+.containerFormatada h2 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	font-style: italic;
+	color: #66cc33;
+}
+
+@media (max-width: 1366px){
+	.containerFormatada{
+		margin: -3rem auto;
+	}
+}
+
+#capa {
+	background-image: url("../img/banner-index.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	/*background-image: linear-gradient(to bottom, #C4C4C4, #64C834 130%)*/
+	;
+}
+.linha-amarela {
+	border-left: 6px solid #ffcc00;
+	width: auto;
+	height: auto;
+	-moz-transform: skew(-10deg, 0deg);
+	-webkit-transform: skew(-10deg, 0deg);
+	-o-transform: skew(-10deg, 0deg);
+	-ms-transform: skew(-10deg, 0deg);
+	transform: skew(-10deg, 0deg);
+}
+.textbanner {
+	padding: 0 20px;
+	-moz-transform: skew(10deg, 0deg);
+	-webkit-transform: skew(10deg, 0deg);
+	-o-transform: skew(10deg, 0deg);
+	-ms-transform: skew(10deg, 0deg);
+	transform: skew(10deg, 0deg);
+}
+.textbanner p {
+	padding: 0.8rem 0;
+	margin: 0;
+	line-height: 1.3;
+}
+.textbanner img {
+	border: 0.2px solid rgba(0, 0, 0, 0.14);
+	border-radius: 50%;
+	-webkit-box-shadow: 2px 20px 21px -12px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 2px 2px 21px -12px rgba(0, 0, 0, 0.6);
+	box-shadow: 2px 20px 22px -12px rgba(0, 0, 0, 0.6);
+}
+.textbanner img:hover {
+	border: 0px solid rgba(0, 0, 0, 0.14);
+	filter: contrast(108%);
+	border-radius: 50%;
+	transform: scale(1.05);
+	transition: all .2s ease-in-out;
+	-webkit-box-shadow: 2px 14px 21px 0px rgba(0, 0, 0, 0.44);
+	-moz-box-shadow: 2px 14px 21px 0px rgba(0, 0, 0, 0.44);
+	box-shadow: 2px 14px 21px 0px rgba(0, 0, 0, 0.44);
+}
+.listagemFormacao {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 10px 0;
+}
+li {
+	/*
+	padding: 0px 5px;
+	font-weight: bold;
+	cursor: pointer;
+*/
+}
+.listagemFormacao li {
+	color: #333;
+	font-weight: bold;
+	padding: 5px 5px;
+	cursor: pointer;
+	border: 1px solid #66cc33;
+	margin: 0 5px;
+	width: 5rem;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.listagemFormacao li:hover {
+	color: #006633;
+	transform: scale(1.1);
+	transition: all .2s ease-in-out;
+}
+.listagemFormacao span {
+	color: #64c832;
+	font-weight: bold;
+}
+
+/* ---------------------------------------------- /*
+
+ * CARDS
+
+/* ---------------------------------------------- */
+
+.cardgroup {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.cardgroup > .cardim {
+	max-width: 354px;
+	height: 354px;
+	border: none;
+}
+.tracoverde {
+	width: 28px;
+	height: 3px;
+	background-color: #66cc33;
+	margin: 5px auto;
+}
+.cardgroup h6 {
+	margin: 1rem;
+}
+.iconcards {
+	width: 92px;
+	height: 92px;
+	border-radius: 100px;
+	background-color: #66cc33;
+	margin: 25px auto;
+	display: flex;
+	justify-content: center;
+}
+.iconcards img {
+	align-self: center;
+	width: 60px;
+	height: 60px;
+	opacity: .99;
+}
+
+/* ----------------------------------------HTML Nest Comments------ /*
+ * alinhamento 
+/* ---------------------------------------------- */
+
+.alinhar {
+	text-align: left;
+}
+
+.banner {
+	background-image: url("../../img/banner-index.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+
+/* ---------------------------------------------- /*
+
+ *  Tela de fundo pagina 22
+
+/* ---------------------------------------------- */
+
+.bannerSlideFundo {
+	background-image: url("../../img/helloquence-61189-unsplash.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+/* ---------------------------------------------- /*
+
+ * BOX LINHA VERDE
+
+/* ---------------------------------------------- */
+
+.boxlinhaverde {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	max-width: 416px;
+	min-height: 188px;
+	min-width: 300px;
+	margin: 10px;
+	position: relative;
+	background-color: #fff;
+	padding: 20px 5px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.boxlinhaverde1 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	max-width: 780px;
+	min-height: 388px;
+	margin: 10px;
+	position: relative;
+	background-color: #fff;
+	padding: 20px 5px;
+	text-align: left;
+	float: center;
+	background-color: #D7E6C8;
+}
+.icon-100 {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	margin: 4px 12px;
+	position: relative;
+}
+.txt-boxverde {
+	text-align: left;
+	padding: 20px 10px;
+	height: 100%;
+	position: relative;
+	margin: auto 0;
+}
+.txt-boxverde h6 {
+	margin-bottom: 1.5rem;
+}
+
+/* ---------------------------------------------- /*
+
+ *  TAB
+
+/* ---------------------------------------------- */
+
+.vtab {
+	background-color: #f5f5f5;
+	border: 1px solid #dddddd;
+	color: #777;
+}
+.active {
+	color: #fff;
+	border: 1px solid #66cc33;
+	background-color: #66cc33;
+}
+.vtab a {
+	background-color: #66cc33;
+	color: #333333;
+	border: 4px solid #ccc;
+	text-decoration: none;
+	text-align: left;
+}
+.nav-link {
+	font-weight: 400;
+	text-align: left;
+}
+.vtab:hover {
+	background-color: #66cc33;
+	color: #fff;
+	border: 1px solid #ddd;
+}
+.tab-pane span {
+	color: #66cc33;
+	font-weight: 600;
+}
+.tab-pane {
+	color: #333333;
+	border: 1px solid #ccc;
+	padding: 15px;
+	background-color: #fff;
+	display: flex;
+	text-align: left;
+	max-width: 38rem;
+}
+.tab-index {
+	max-width: 840px;
+	width: 100%;
+	margin: 0 auto;
+}
+.nav-tabs,
+.nav-pills {
+	text-align: center;
+}
+
+/* ---------------------------------------------- /*
+
+ *  ACCORDION
+
+/* ---------------------------------------------- */
+
+#accordion .card-header {
+	color: #333333;
+	height: 4rem;
+	background-color: #66cc33;
+	text-align: start;
+	text-justify: distribute;
+}
+#accordion p {
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+#accordion i {
+	font-size: 1rem;
+	padding-right: 1rem;
+}
+
+/* efeito animação */
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px, 0, 0);
+	transition: .3s;
+}
+.animeStart {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+/* ---------------------------------------------- /*
+
+ *  NAVBAR
+
+/* ---------------------------------------------- */
+
+.nav-sicredi {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+	padding: 0;
+	height: 50px;
+	width: 100%;
+}
+.banner {
+	background-image: url("../../img/banner.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+
+.bannerSlideFundo {
+	background-image: url("../../img/helloquence-61189-unsplash.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+/* ---------------------------------------------- /*
+
+ * CAPITULOS - CONTEUDO PROGRAMATICO
+
+/* ---------------------------------------------- */
+
+.conteudoprogramatico {
+	margin-bottom: 0rem;
+	max-width: 840px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 1rem;
+	text-align: left;
+}
+.conteudoprogramatico h4 {
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+
+.conteudoprogramatico a:link,
+a:visited {
+	color: #66cc33;
+	text-decoration: none;
+}
+
+.conteudoprogramatico a:hover p {
+	color: #ffcc00;
+	text-decoration: none;
+	target-new: none;
+}
+.conteudoprogramatico a:hover h4{
+	color: #ffcc00;
+	text-decoration: underline;
+	target-new: none;
+}
+/* ---------------------------------------------- /*
+
+ * COMEÇAR
+
+/* ---------------------------------------------- */
+
+.nomeEliane{
+	cursor:pointer; 
+	font-weight: 900;
+	font-family : Calibri;
+	font-size : 18px;
+	line-height : 18px;
+	color : #636363;
+	color : rgb(99, 99, 99); 
+	text-decoration : underline;
+}
+
+
+ #avatarMulher{
+	margin: 0 10px;
+ }
+
+ .alinhaCenter{
+	 display: flex;
+	 flex-direction: column;
+	 flex-wrap: wrap;
+	 align-items: center;
+ }
+
+ .tab-pane p{
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+ }
+
+ .txt-boxverde{
+	width: 220px;
+	text-align: center;
+	margin: auto auto;
+ }
+
+ .classItalico{
+	 font-style: italic;
+ }
+
+
+ #modalNomeDaMulher{
+	color:#006633; 
+	font-size: 21px
+ }
+
+ @media (max-width: 768px)
+ {
+	#modalNomeDaMulher{
+		 font-size: 1.3rem;
+		 text-align: center;
+	 }
+
+	#imgAvatar{
+		margin: auto auto;
+		
+	}
+
+	.btnFECHAR{
+		margin-left: -40px;
+	}
+
+	.listagemFormacao li{
+		width: 100%;
+	}
+ }
+
+.modal-body p{
+	margin-top: 8px;
+}
+
+ #imgAvatar{
+	margin: 16px auto;
+}
+
+.nestaResolucao{
+	color: #666;
+	text-decoration: underline;
+}
+
+.nestaResolucao:hover{
+	color: #666;
+	text-decoration: underline;
+}
+
+.areatitulo{
+	margin-top: 7rem;
+}
+
+.nav-link, .link{
+	
+	font-family: "Calibri', sans-serif;
+
+}
+.nav-item a {
+	color: #64c832;
+	font-size: 18px;
+}
+
+#cap01, #cap02, #cap03, #cap04, #cap05{
+	text-transform: uppercase;
+  }
+  @media (max-width: 550px){
+	#cap01, #cap02, #cap03, #cap04, #cap05{
+	  font-size: 10px;
+	}
+	
+  }

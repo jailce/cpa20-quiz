@@ -1,0 +1,332 @@
+@import url("font/stylesheet.css");
+@import url("../icons/sicredui-font/css/style.css");
+
+:root {
+	--white: #ffffff;
+	--light: #cccccc;
+	--black: #333333;
+	--grey: #666666;
+	--teal: #D7E6C8;
+	--green: #66cc33;
+	--dark-green: #006633;
+}
+
+header {
+/*	padding: 156px 0 100px;*/
+
+}
+
+section {
+	padding: 1.5rem 0;
+	margin: 0;
+	min-height: 280px;
+}
+
+.container {
+	width: 100%;
+/*	padding: 1rem 15px;*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	min-height: 280px;
+	/*max-width: 1290px;*/
+
+}
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px, 0, 0);
+	transition: .3s;
+}
+
+.animeStart {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+/* ---------------------------------------------- /*
+
+ * CELULAR E TELAS PEQUENAS
+
+/* ---------------------------------------------- */
+@media screen and (max-width: 767.98px) {
+	body {
+		font-size: 16px;
+
+	}
+
+	.pad {
+		margin-left: 15px;
+	}
+
+	.t-cont,
+	.t-cont-center {
+		/*h2*/
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		/*BOLD*/
+		color: #006633;
+		font-size: 2.1em;
+		text-align: left;
+		padding-left: 15px;
+		padding-right: 15px;
+
+
+	}
+
+	.t-sub-left,
+	.t-sub-center {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		color: 333333;
+		font-size: 1rem;
+		line-height: 1;
+		margin: 1rem auto;
+		text-align: left;
+		width: auto;
+		max-width: 720px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+	}
+
+	.cont-inner,
+	.cont-inner-left {
+		/*texto*/
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+		line-height: 1.2;
+		text-align: left;
+			padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.rwd-break {
+		display: none;
+	}
+
+
+}
+
+/* ---------------------------------------------- /*
+
+ * TABLET PRA CIMA
+
+/* ---------------------------------------------- */
+@media screen and (min-width: 767.98px) {
+	body {
+		font-size: 18px;
+
+	}
+
+
+	.t-cont {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		/*BOLD*/
+		color: #006633;
+		font-size: 2.1em;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.5rem;
+
+
+	}
+
+	.t-sub-center {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		color: 333333;
+		font-size: 1rem;
+		line-height: 1.1;
+		margin: 0.8rem auto;
+		text-align: center;
+		padding: 0 15px;
+
+
+	}
+
+	.t-sub-left {
+		font-family: 'Exo 2', sans serif;
+		font-weight: 700;
+		color: 333333;
+		font-size: 1rem;
+		line-height: 1.1;
+		
+		text-align: left;
+		margin: 0.8rem auto;
+		width: auto;
+		
+
+	}
+
+	.cont-inner {
+		/*texto*/
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		line-height: 1.2;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+		width: auto;
+		padding: 0 15px;
+		
+
+
+
+	}
+
+	.cont-inner-left {
+		/*texto*/
+		font-family: 'Calibri', sans serif;
+		color: #666;
+		font-size: 1rem;
+		line-height: 1.2;
+		text-align: left;
+		margin: 1rem auto;
+		width: auto;
+	
+		padding: 0 15px;
+	}
+
+	.rwd-break {
+		display: block;
+	}
+
+
+
+}
+
+
+
+
+
+/*-------*/
+
+.texto-branco {
+	color: #fff;
+}
+
+.texto-verde {
+	color: #66cc33;
+}
+
+.texto-claro {
+	color: #D7E6C8;
+}
+
+.texto-cinza {
+	color: #666;
+}
+
+.texto-dark {
+	color: #333;
+}
+.texto-verdao {
+	color: #006633;
+}
+
+
+
+table {
+	border-collapse: separate;
+	border-spacing: 4px;
+	font-family: 'Exo 2', san serif;
+}
+
+thead th {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+padding: 1rem 0;
+height: 36px;
+}
+thead th h3{
+	margin:auto;
+	text-align:center;
+}
+tbody th {
+	text-transform: lowcase;
+	color: #006633;
+	font-weight: 600;
+	text-align: left;
+}
+
+tbody td {
+	text-transform: lowcase;
+	color: #555;
+	font-family: 'Calibri', san serif;
+	font-size: 14px;
+	text-align:center;
+	margin: auto 0;
+}
+
+.tdrow-escura th,
+.tdrow-escura td {
+	background-color: #e6e6e6;
+}
+
+.tdrow-clara th,
+.tdrow-clara td {
+	background-color: #f2f2f2;
+}
+
+.tcell-vazia {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.tcell-head {
+	background-color: #63cc33;
+}
+
+thead th:last-child {
+	border-top-right-radius: 25px;
+}
+
+tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 25px;
+}
+
+tbody tr:last-child th:first-child {
+	border-bottom-left-radius: 25px;
+}
+
+.tabela01 {
+	max-width: 800px;
+	max-height: 382px;
+}
+
+.tabela02 {
+	max-width: 700px;
+	max-height: 385px;
+}
+
+.tabela03 {
+	max-width: 932px;
+	max-height: 320px;
+}
+
+.tabela04 {
+	
+	min-height: 320px;
+}
+
+.table-arredondar > tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 25px;
+}
+
+table.larga {
+	
+
+
+	
+}
+
+

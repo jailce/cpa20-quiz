@@ -1,0 +1,1089 @@
+/* ---------------------------------------------- /*
+ * TABELAS
+/* ---------------------------------------------- */
+table {
+	border-collapse: separate;
+	border-spacing: 4px;
+	font-family: 'Exo 2', san serif;
+}
+
+thead th {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+}
+
+tbody th {
+	text-transform: lowcase;
+	color: #006633;
+	font-weight: 400;
+}
+
+tbody td {
+	text-transform: lowcase;
+	color: #555;
+	font-family: 'calibri', san serif;
+	font-size: 18px;
+}
+
+.tdrow-escura th,
+.tdrow-escura td {
+	background-color: #e6e6e6;
+}
+
+.tdrow-clara th,
+.tdrow-clara td {
+	background-color: #f2f2f2;
+}
+
+.tcell-vazia {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.tcell-head {
+	background-color: #63cc33;
+}
+
+thead th:last-child {
+	border-top-right-radius: 25px;
+}
+
+tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 25px;
+}
+
+tbody tr:last-child th:first-child {
+	border-bottom-left-radius: 25px;
+}
+
+.tabela01 {
+	max-width: 800px;
+	max-height: 382px;
+}
+
+.tabela02 {
+	max-width: 700px;
+	max-height: 385px;
+}
+
+.tabela03 {
+	max-width: 932px;
+	max-height: 320px;
+}
+
+.tabela04 {
+	max-width: 600px;
+	min-height: 320px;
+}
+
+.tabela04 > tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 25px;
+}
+
+.tabela04.table {
+	line-height: 1;
+	font-size: 16px;
+	padding: 0.5rem;
+}
+
+/* ---------------------------------------------- /*
+ * ESQUEMA - ETAPAS DO DINHEIRO
+/* ---------------------------------------------- */
+.etapas-dinheiro {
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 16px 16px 16px 16px;
+	max-width: 600px;
+	height: 13rem;
+	padding: 5px 5px;
+	z-index: 2;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+}
+
+.colocacao,
+.ocultacao,
+.integracao {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: auto 0;
+	background-color: #fff;
+}
+
+.colocacao:before,
+.ocultacao:before,
+.integracao:before {
+	position: absolute;
+	top: 110%;
+	font-family: 'Exo 2', sans serif;
+	font-weight: 700;
+	color: #006633;
+	font-size: 1rem;
+}
+
+.colocacao:before {
+	content: "Colocação";
+}
+
+.ocultacao:before {
+	content: "Ocultação";
+}
+
+.integracao:before {
+	content: "Integração";
+}
+
+.colocacao p,
+.ocultacao p,
+.integracao p {
+	font-family: 'Exo 2', sans serif;
+	font-weight: 700;
+	color: #006633;
+	font-size: 23px;
+	margin: 0px;
+	height: 30px;
+}
+
+colocacao:active {
+	background-color: #ccc;
+}
+
+.colocacao:hover,
+.ocultacao:hover,
+.integracao:hover {
+	cursor: pointer;
+	background-color: #66cc33;
+}
+
+.colocacao:after {
+	font-family: calibri: font-size: 18px;
+	color: #555;
+	position: absolute;
+	top: 180%;
+	width: 330px;
+	z-index: -1;
+	overflow: visible;
+}
+
+.ocultacao:after {
+	border-top: 2px dashed #bbb;
+	content: "";
+	position: absolute;
+	top: 50%;
+	max-width: 400px;
+	width: 50vw;
+	z-index: -1;
+	overflow: visible;
+}
+
+/* ---------------------------------------------- /*
+ * conteudo 09
+/* ---------------------------------------------- */
+.icon-c09 img {
+	opacity: 0.9;
+	width: 200px;
+}
+
+.box-verde-claroc09 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin: 20px;
+	position: relative;
+	background-color: #D7E6C8;
+	padding: 1rem;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 10
+/* ---------------------------------------------- */
+.boxlinhaverdeC10 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	max-width: 340px;
+	min-width: 300px;
+	height: auto;
+	min-height: 188px;
+	position: relative;
+	background-color: #fff;
+	padding: 1rem;
+	margin: 1rem 6px;
+}
+
+.boxlinhaverdeC10 img {
+	width: 82px;
+	height: 82px;
+	margin-bottom: 2rem;
+}
+
+.tracoverde-esq {
+	width: 28px;
+	height: 3px;
+	background-color: #66cc33;
+	margin: 0.8rem 0;
+}
+
+.box-verde-claroc10 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	width: 100%;
+	height: auto;
+	margin: 20px;
+	position: relative;
+	background-color: #D7E6C8;
+	padding: 1rem;
+}
+
+.bannerc10 h1 {
+	/*bold e italic*/
+	color: #fff;
+
+}
+
+.bannerc10 em > span {
+	/*bold e italic*/
+	font-style: italic;
+	font-weight: 700;
+	color: #66cc33;
+}
+
+.banner-codigo {
+	background-image: url("../img/bg-banner-c10.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.box-banner-c10 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	/*	border: 1px solid #66cc33;*/
+	width: 100%;
+	min-width: 300px;
+	height: auto;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.52);
+	padding: 1rem;
+}
+
+.box-banner-c10 p {
+	color: #fff;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 11
+/* ---------------------------------------------- */
+.cont11 img {
+	height: 60px;
+	margin: 4rem 0;
+	filter: opacity(98%);
+}
+
+.cont11 p {
+	color: #fff;
+}
+
+.cont11 > .row {
+	margin: 4rem 0;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 12
+/* ---------------------------------------------- */
+.cont12 i {
+	color: #fff;
+	font-size: 1rem;
+}
+
+.cont12 p {
+	color: #fff;
+}
+
+.cont12 td {
+	width: 400px;
+}
+
+.cont12 th {
+	width: 1px;
+	display: none;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 13
+/* ---------------------------------------------- */
+.cont13 img {
+	max-width: 65px;
+	max-height: 60px;
+	margin: 1.5rem auto;
+	/*	height:80px;*/
+}
+
+.boxc13 {
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	width: 100%;
+	min-width: 300px;
+	min-height: 70px;
+	position: relative;
+	background-color: #D7E6C8;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 14
+/* ---------------------------------------------- */
+.tabc14 {
+	background-color: ;
+	width: 400px;
+	margin: 2rem 0;
+}
+
+#c14.nav-justified .nav-link.active {
+	background-color: #66cc33;
+	border: 1px solid #66cc33;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#c14.nav-justified .nav-link.active:hover {
+	background-color: #66cc33;
+	border: 1px solid #006633;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#c14.nav-pills.nav-justified {
+	background-color: #ddd;
+}
+
+#c14.nav-justified .show > .nav-link {
+	background-color: #66cc33;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#c14.nav-justified .nav-link:hover {
+	background-color: #66cc33;
+	border: 1px solid #006633;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#c14 .nav-item {
+	background-color: #ccc;
+	display: flex;
+	justify-content: center;
+}
+
+#profile.tab-pane.fade i {
+	color: #66cc33;
+	font-size: 1rem;
+}
+
+.tabc14 > .nav-link {
+	color: #fff;
+}
+
+.tabc14 li > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.tabc14 li:before {
+	content: "";
+}
+
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 15
+/* ---------------------------------------------- */
+.boxc15 {
+	background-color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 0 16px 16px 16px;
+	color: #006633;
+	margin: 2rem 0;
+	max-width: 600px;
+	min-height: 34rem;
+}
+
+.lista_topicos_cont15 {
+	list-style: none;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 16
+/* ---------------------------------------------- */
+.boxlinhaverdec16 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	width: 100%;
+	min-width: 300px;
+	height: auto;
+	vertical-align: center;
+	position: relative;
+	background-color: #fff;
+	padding: 2rem;
+	margin: 2rem 0;
+}
+
+.lista_topicos_c16 {}
+
+.icon-c16 i {
+	font-size: 1rem;
+	color: #66cc33;
+}
+
+.icon-pc-16 img {
+	width: 300px;
+	height: auto;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 17
+/* ---------------------------------------------- */
+.bannerSlideFundoc17 {
+	background-image: url("../img/bg-banner-c17.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 18
+/* ---------------------------------------------- */
+/* ---------------------------------------------- /*
+ * CONTEUDO 19
+/* ---------------------------------------------- */
+.tab19 a {
+	font-size: 16px;
+	line-height: 1;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 20
+/* ---------------------------------------------- */
+.boxc20 {
+	border-radius: 0px 16px 16px 16px;
+	-moz-border-radius: 0px 16px 16px 16px;
+	max-width: 716px;
+	min-height: 188px;
+	margin: 1rem;
+	position: relative;
+	padding: 1rem;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 21
+/* ---------------------------------------------- */
+.r21 > .col-lg-4 {
+	max-width: 400px;
+	margin: 2rem auto;
+}
+
+.r21 > .col-lg-4 h6 {
+	text-align: center;
+}
+
+.r21 > .col-lg-4 img {
+	margin: 0 auto;
+	height: 80px;
+}
+
+.boxc22 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	max-width: 220px;
+	width: 100%;
+	min-width: 120px;
+	height: auto;
+	min-height: 140px;
+	position: relative;
+	background-color: #fff;
+	margin: 1rem 1rem;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 22
+/* ---------------------------------------------- */
+/* ---------------------------------------------- /*
+ * CONTEUDO 27
+/* ---------------------------------------------- */
+.tab27 a {
+	font-size: 16px;
+	line-height: 1;
+}
+
+/* fim cont 16*/
+/* ---------------------------------------------- /*
+ * CAPITULOS - CONTEUDO PROGRAMATICO
+/* ---------------------------------------------- */
+.hrcap {
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.conteudoprogramatico {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+/* ---------------------------------------------- /*
+*COR
+/* ---------------------------------------------- */
+
+.listagemFormacao {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-left: -5px;
+}
+
+.listagemFormacao li {
+	color: #333333;
+}
+
+.listagemFormacao span {
+	color: #64c832;
+}
+
+.containerFormatada {
+	padding-left: 320px;
+	color: #146E38;
+}
+
+/* ---------------------------------------------- /*
+ *  FORMATAÇÃO ESPECIAL PARA O CABEÇALHO
+/* ---------------------------------------------- */
+.headertxt h1 {
+	font-family: 'exo2_black_italic', bold;
+	color: #66cc33;
+}
+
+.classSpan {
+	font-family: 'exo2_bold';
+	color: #66cc33;
+}
+
+.headertxt h6 {
+	font-size: 18px;
+}
+
+/* ---------------------------------------------- /*
+ * BOX LINHA VERDE Escuro
+/* ---------------------------------------------- */
+.boxlinhaverde1 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #006633;
+	max-width: 716px;
+	min-height: 188px;
+	margin: 20px;
+	position: relative;
+	background-color: #fff;
+	padding: 20px 5px;
+}
+
+.icon-100 {
+	width: 58px;
+	height: 58px;
+	display: flex;
+	align-content: center;
+	margin: auto 12px;
+	position: relative;
+}
+
+.icon-100 img {}
+
+/* ---------------------------------------------- /*
+ *  TAB
+/* ---------------------------------------------- */
+
+/*
+.setatab{
+	text-align: right;
+}
+*/
+/* ---------------------------------------------- /*
+ * CARDS
+
+.iconcards {
+	width: 90px;
+	height: 90px;
+	margin: 25px auto;
+}
+.boxlinhaverde {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	max-width: 200px;
+	width: auto;
+	height: auto;
+	min-height: 188px;
+	position: relative;
+	background-color: #fff;
+}
+.boxlinhaverde1 {
+	border-radius: 0px 20px 20px 20px;
+	-moz-border-radius: 0px 20px 20px 20px;
+	border: 1px solid #66cc33;
+	max-width: 780px;
+	min-height: 388px;
+	margin: 10px;
+	position: relative;
+	background-color: #fff;
+	padding: 20px 5px;
+	text-align: left;
+	float: center;
+	background-color: #D7E6C8;
+}
+.icon-100 {
+	width: 58px;
+	height: 58px;
+	display: flex;
+	align-content: center;
+	margin: auto 12px;
+	position: relative;
+}
+.txt-boxverde {
+	position: relative;
+	
+}
+/* ---------------------------------------------- /*
+ * CONTEUDO 02
+/* ---------------------------------------------- */
+
+/*
+.lista_topicos {
+	list-style: none;
+	text-align: justify;
+}
+.lista_topicos li {
+	text-align: justify;
+	font-weight: 600;
+}
+.lista_topicos i {
+	margin-right: 3px;
+	color:#66cc33;
+	font-size: 1rem;
+}
+*/
+/* ---------------------------------------------- /*
+ * CONTEUDO 03
+/* ---------------------------------------------- */
+.cardgroup {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.cardgroup > .cardim {
+	max-width: 354px;
+	height: 354px;
+	border: none;
+}
+
+.cardgroup h6 {
+	margin: 1rem;
+}
+
+.cardgroup {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.cardim {
+	max-width: 354px;
+	height: 354px;
+	border: none;
+}
+
+.iconcards {
+	width: 170px;
+	height: 136px;
+	margin: 1rem auto;
+}
+
+.iconcards img {
+	align-self: center;
+	width: 170px;
+	height: 136px;
+	opacity: 0.99;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 04
+/* ---------------------------------------------- */
+#contaudo04 h6 {
+	font-size: 1rem;
+}
+
+#contaudo04 i {
+	color: #66cc33;
+}
+
+.lavagemc4 i {
+	color: #66cc33;
+	font-size: 1rem;
+}
+
+.lavagemc4 img {
+	width: 140px;
+	height: 140px;
+}
+
+.obsc4 h5 {
+	color: #666;
+}
+
+.advertenciac4 h6 {
+	font-size: 0.8rem;
+	color: #777;
+}
+
+.advertenciac4 i {
+	font-size: 1rem;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 05
+/* ---------------------------------------------- */
+.box-fiu-coaf {
+	width: 100%;
+	max-width: 410px;
+	min-width: 310px;
+	min-height: 333px;
+	margin: 1rem 0;
+	;
+	padding: 0;
+}
+
+.bfc-title {
+	margin: auto 0;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 54px;
+	padding: 0.5rem 0;
+	background-color: #f5f5f5;
+	display: block;
+	border: 1px #ddd solid;
+}
+
+.bfc-title h6 {
+	display: inline-block;
+	margin: auto 0;
+	font-size: 1rem;
+}
+
+.bfc-content {
+	display: block;
+	height: auto;
+	padding: 1rem;
+	border: 1px #ddd solid;
+	background-color: #fff;
+}
+
+/* ---------------------------------------------- /*
+ * CONTEUDO 06
+/* ---------------------------------------------- */
+.vtab {
+	background-color: #f5f5f5;
+	border: 1px solid #dddddd;
+	color: #777;
+}
+
+.active {
+	color: #fff;
+	border: 1px solid #66cc33;
+	background-color: #66cc33;
+}
+
+.vtab a {
+	background-color: #66cc33;
+	color: #333333;
+	border: 4px solid #ccc;
+	text-decoration: none;
+	text-align: left;
+}
+
+.nav-link {
+	font-weight: 400;
+	text-align: left;
+}
+
+.vtab:hover {
+	background-color: #66cc33;
+	color: #fff;
+	border: 1px solid #ddd;
+}
+
+.tab-pane span {
+	color: #66cc33;
+	font-weight: 600;
+}
+
+.tab-pane {
+	color: #333333;
+	border: 1px solid #ccc;
+	padding: 15px;
+	background-color: #fff;
+	display: flex;
+	text-align: left;
+}
+
+.tab-index {
+	max-width: 840px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.nav-tabs,
+.nav-pills {
+	text-align: center;
+}
+
+.tabc6 {
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------------------------------------------- /*
+ * CAPITULOS - CONTEUDO PROGRAMATICO
+/* ---------------------------------------------- */
+.estiloPadding {
+	padding: 55px 10px;
+}
+
+/**
+ * 
+ *
+/* ---------------------------------------------- /*
+ * General styles
+/* ---------------------------------------------- */
+/* ----------------------------------------HTML Nest Comments------ /*
+ * alinhamento 
+/* ---------------------------------------------- */
+.alinhar {
+	text-align: left;
+}
+
+/* ---------------------------------------------- /*
+ *  FORMATAÇÃO ESPECIAL PARA O CABEÇALHO
+/* ---------------------------------------------- */
+.headertxt h1 {
+	font-family: 'exo2_black_italic', bold;
+	color: #66cc33;
+}
+
+.headertxt h6 {
+	font-size: 18px;
+}
+
+/* ---------------------------------------------- /*
+ *  Tela de fundo pagina 22
+/* ---------------------------------------------- */
+.bannerSlideFundo {
+	background-image: url("../img/bg-banner-ccjpg.jpg");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+/* ---------------------------------------------- /*
+ *  cap01
+/* ---------------------------------------------- */
+.nav-cap02 {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+	padding: 0;
+	height: 50px;
+	width: 100%;
+}
+
+.bannercap02 {
+	background-image: url("../img/banner1.png");
+	width: 100%;
+	height: 100vh;
+	max-height: 1200px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.nav-brandcap02 {}
+
+.nav-brandcap02 img {
+	display: flex;
+	margin: auto 0;
+}
+
+
+.circulo {
+	border-style: solid;
+	border-width: 2px 2px 2px 100px;
+	color: #66cc33;
+	border-color: #66cc33;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 0 10px 10px 10px;
+}
+
+/*----*/
+
+
+/* ---------------------------------------------- /*
+
+*COR
+
+/* ---------------------------------------------- */
+.COR-1B {
+	/* vERDE ESCURO */
+
+	background-color: #006633;
+}
+
+.COR-1 {
+	color: #006633;
+}
+
+.COR-2B {
+	/* vERDE CLARO */
+
+	background-color: #D7E6C8;
+}
+
+.COR-2 {
+	color: #006633;
+}
+
+.COR-3B {
+	/* vERDE CLARO */
+
+	background-color: #D7E6C8;
+}
+
+.COR-3 {
+	color: #006633;
+}
+
+.COR-4B {
+	/* MARROM */
+
+	background-color: #006633;
+}
+
+.COR-4 {
+	color: #006633;
+}
+
+.COR-5B {
+	/* VERDE PRIN */
+
+	background-color: #66cc33;
+}
+
+.COR-5 {
+	color: #66cc33;
+}
+
+.COR-6B {
+	/* BRANCO */
+
+	background-color: #FFF;
+}
+
+.COR-6 {
+	color: #FFF;
+}
+
+.COR-7B {
+	/* Neutro Escuro */
+
+	background-color: #666666;
+}
+
+.COR-7 {
+	color: #666666;
+}
+
+.COR-8B {
+	/* Amarelo */
+
+	background-color: #FFCD00;
+}
+
+.COR-8 {
+	color: #FFCD00;
+}
+
+.COR-9B {
+	/* Preto */
+
+	background-color: #333333;
+}
+
+.COR-9 {
+	color: #333333;
+}
+
+.COR-10B {
+	/* Preto */
+
+	background-color: #494949;
+}
+
+.COR-10 {
+	color: #494949;
+}

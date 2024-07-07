@@ -1,0 +1,706 @@
+﻿.banner {
+	/*capa da pagina cap03*/
+	background-image: url('../img/capa5.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+
+}
+
+
+
+
+.titulo-cap {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	top: 26vh;
+	left: 0vw;
+	height: 100vh;
+	padding: 0 2rem;
+}
+
+.titulo-cap h1 {
+	position: relative;
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0;
+	font-size: 3.6rem;
+	word-wrap: normal;
+
+}
+.titulo-cap-mob {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	top: 26vh;
+	left: 0vw;
+	height: 100vh;
+	padding: 0 1rem;
+}
+.titulo-cap-mob h1 {
+	position: relative;
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0;
+	font-size: 3rem;
+	word-wrap: normal;
+
+}
+
+
+.boxim-c1{
+
+	width: auto;
+	height: auto;
+	position: relative;
+	padding: 1rem;
+	margin: 2rem auto;
+	max-width: 320px;
+	background-color:;
+	min-height: 400px;
+
+
+
+}
+.formcalc{
+		width: auto;
+	height: auto;
+	
+	position: absolute;
+	
+	background-color:;
+	top:220px;
+	
+}
+.boxim-c1 img{
+
+display: flex;
+
+
+	width: 280px;
+}
+
+
+.boxim-step{
+	background-color:;
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 2rem 0 0 0;
+	margin-top: 1rem;
+	margin-right: auto;
+	margin-left:auto;
+	margin-bottom: 0.5rem;
+	border-top: 3px solid #fff;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'exo 2';
+	font-size: 16px;
+	color:#063;
+
+
+}
+
+.bordinha{
+	border-top: 1px solid #f5f5f5;
+}
+
+.b-bottom{
+	border-bottom: 1px solid #6c3;
+
+}
+.stopimg img{
+	margin: 2rem auto;
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	justify-content: center;
+}
+
+.steptxt p{
+	font-size:1.2rem;
+	margin-bottom: 2rem;
+}
+
+
+
+
+
+
+.card{
+	background: #f8f9fa;
+}
+
+
+
+div.col-lg-10 p{
+	padding: 20px 5px;
+}
+
+p{
+	text-align: left;
+}
+
+.textoSlider{
+	padding: 55px 70px; 
+	color: #fff;
+}
+
+
+
+.oqAcao{
+	background-color: #D7E6C8;
+	padding: 1rem;
+	border-radius: 0px 16px 16px 16px;
+}
+
+.oqAcao2{
+	background-color: #66cc33;
+	padding: 1rem;
+	border-radius: 0px 16px 16px 16px;
+	height: 100%
+}
+
+
+.oqAcao2 p{
+	color: #fff;
+}
+
+.txtLeft{
+	text-align: left;
+}
+
+.classSpan{
+	font-family: 'Exo 2', sans-serif;
+	color: #66cc33;
+	font-weight: bold;
+}
+
+.oqAcao3{
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 0px 16px 16px 16px;
+	border: 1px solid #66cc33;
+	height: 380px;
+}
+
+
+
+@media (max-width: 660px)
+{
+	.oqAcao3{
+		height: 990px;
+		margin-top: 50px;
+	}
+}
+
+.areaTabs, .modal-content, .modal-body{
+	font-family: 'Exo 2', sans-serif;
+}
+
+.iconePqueno{
+	font-size: 15px;
+}
+
+.oqAcao4{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 1px 15px 15px 10px;
+	border: 1px solid #66cc33;
+	height: 100%;
+	color: #9e9b9b;
+	margin-bottom: 10px;
+}
+.caixa1{
+	background-color: #64CB32;
+	padding: 20px;
+	border-radius: 1px 1px 1px 1px;
+	border: 1px solid #64CB32;
+	height: 100%;
+	color: #000;
+	margin-bottom: 5px;
+
+
+}
+.caixa1 p{
+	color: #FFF;
+}
+
+.caixa6{
+
+	background-color: #FFF;
+	padding: 20px;
+	border-radius: 1px 1px 1px 1px;
+	border: 1px solid #64CB32;
+	height: 100%;
+	color: #000;
+	margin-bottom: 5px;
+
+
+}
+.caixa1 p{
+	color: #FFF;
+}
+
+
+.caixa2{
+	background-color: #D7E6CB;
+	padding: 20px;
+	border-radius: 1px 1px 1px 15px;
+	border: 1px solid #D7E6CB;
+	height: 100%;
+	color: #FFF;
+	margin-bottom: 5px;
+}
+.caixa2 p{
+	color: #000;
+}
+
+.caixa3{
+	background-color: #D7E6CB;
+	padding: 20px;
+	border-radius: 1px 15px 1px 1px;
+	border: 1px solid #D7E6CB;
+	height: 100%;
+	color: #000;
+	margin-bottom: 5px;
+}
+.caixa3 p{
+	color: #000;
+}
+
+.caixa4{
+	background-color: #3C1E00;
+	padding: 20px;
+	border-radius: 1px 1px 15px 1px;
+	border: 1px solid #3C1E00;
+	height: 100%;
+	color: #FFF;
+	margin-bottom: 5px;
+}
+.caixa4 p{
+	color: #FFF;
+}
+
+
+.oqAcao5{
+	background-color: #006633;
+	padding: 30px;
+	border-radius: 1px 15px 15px 10px;
+	border: 1px solid  #006633;
+}
+
+.oqAcao5 p{
+	color: white;
+}
+
+
+.oqAcao6{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 1px 15px 15px 10px;
+	border: 1px solid #66cc33;
+	color: #9e9b9b;
+}
+
+.oqAcao6 p{
+	text-align: center;
+}
+
+
+
+/* ---------------------------------------------- /*
+
+ * FIM DE TABELAS
+
+/* ---------------------------------------------- */
+
+
+.bkg01{
+	background: #63cc33;
+}
+
+.bkg01 p{
+	color: white;
+}
+
+.bkg02{
+	background: #FFC700;
+}
+
+.bkg03{
+	background: #D7E6C8;
+}
+
+.tdLeft{
+	text-align: left;
+}
+
+span{
+	display: block;
+}
+
+.optResp{
+	cursor: pointer;
+}
+
+.areaTabela{
+
+	margin: 0 auto;
+}
+
+
+
+
+
+.linha-preta {
+	border-left: 6px solid #bbb;
+	width: auto;
+	height: auto;
+	-moz-transform: skew(-10deg, 0deg);
+	-webkit-transform: skew(-10deg, 0deg);
+	-o-transform: skew(-10deg, 0deg);
+	-ms-transform: skew(-10deg, 0deg);
+	transform: skew(-10deg, 0deg);
+}
+
+
+/* ---------------------------------------------- /*
+
+ * ESQUEMA - ETAPAS DO DINHEIRO Primeiro Esquema
+/* ---------------------------------------------- */
+
+
+.etapas-dinheiro {
+
+	max-width: 600px;
+	height: 1rem;
+	padding: 1px auto;
+	z-index: 2;
+	margin: 50px 0;
+}
+.colocacao,
+.ocultacao,
+.integracao {
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: auto 0;
+	background-color: #fff;
+		-webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+		-moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+		box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+.colocacao:before,
+.ocultacao:before,
+.integracao:before {
+	position: absolute;
+	top: 110%;
+	font-family: 'Exo 2', sans serif;
+	font-weight: 700;
+	color: #006633;
+	font-size: 1rem;
+}
+.colocacao:before {
+	content: "Média";
+}
+.ocultacao:before {
+	content: "Moda";
+}
+.integracao:before {
+	content: "Mediana";
+}
+.colocacao p,
+.ocultacao p,
+.integracao p {
+	font-family: 'Exo 2', sans serif;
+	font-weight: 700;
+	color: #006633;
+	font-size: 23px;
+	margin: 0px;
+	height: 30px;
+}
+.colocacao:active {
+  background-color: #ccc;
+}
+
+.colocacao:hover,
+.ocultacao:hover,
+.integracao:hover{
+		display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: auto 0;
+	background-color: #66cc33;
+
+		transform: scale(1.05);
+		transition: all .4s ease-in-out;
+		-webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+		-moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+		box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+}
+
+.ocultacao:after {
+	border-top: 2px dashed #bbb;
+	content: "";
+	position: absolute;
+	top: 50%;
+	max-width: 400px;
+	width: 50vw;
+	z-index: -1;
+	overflow: visible;
+}
+.ocultacao:hover::after {
+
+	display: none;
+}
+a.colocacao ,
+a.ocultacao ,
+a.integracao {
+	text-decoration: none;
+}
+
+
+/* ---------------------------------------------- /*
+
+ * ESQUEMA - ETAPAS DO DINHEIRO  Segundo Esquema
+
+/* ---------------------------------------------- */
+.calculadora2:hover::after {
+
+	display: none;
+}
+.etapas-dinheiro1 {
+	max-width: 500px;
+	height: 1rem;
+	padding: 1px auto;
+	z-index: 1;
+	margin: 30px 0;
+
+
+}
+.calculadora1,
+.calculadora2,
+.calculadora3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color:#f5f5f5;
+	
+			-webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+		-moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+		box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+a.calculadora1 ,
+a.calculadora2 ,
+a.calculadora3 {
+	text-decoration: none;
+}
+.calculadora1:before,
+.calculadora2:before,
+.calculadora3:before {
+	position: absolute;
+	top: 110%;
+	font-family: 'Exo 2', sans serif;
+	font-weight: 700;
+	color: #006633;
+	font-size: 1rem;
+	font-size: 15px;
+	width: 160px;
+	text-align:center;
+
+}
+.calculadora1:before {
+	content: "Calculando 1 \A desvio padrão:";
+	white-space: pre-wrap;
+}
+.calculadora2:before {
+	content: "Calculando 2 \A desvios:";
+	white-space: pre-wrap;
+}
+.calculadora3:before {
+	content: "Calculando 3 \A desvios:";
+	white-space: pre-wrap;
+}
+.calculadora1 p,
+.calculadora2 p,
+.calculadora3 p {
+	font-family: 'Exo 2', sans serif;
+	font-weight: 700;
+	color: #006633;
+	font-size: 20px;
+	margin: 0px;
+	height: 30px;
+
+}
+.calculadora1:hover,
+.calculadora2:hover,
+.calculadora3:hover{
+		display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: auto 0;
+	background-color: #6c3;
+			transform: scale(1.05);
+		transition: all .35s ease-in-out;
+		-webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+		-moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+		box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.20);
+}
+.calculadora1:after {
+	font-family: calibri: font-size: 15px;
+	color: #555;
+	position: absolute;
+	top: 180%;
+	width: 330px;
+	z-index: -1;
+	overflow: visible;
+}
+.calculadora2:after {
+	border-top: 2px dashed #f5f5f5;
+	content: "";
+	position: absolute;
+	top: 50%;
+	max-width: 300px;
+	width: 50vw;
+	z-index: -1;
+	overflow: visible;
+}
+
+
+
+.tracopreto {
+	width: 30vw;
+	height: 2px;
+	background-color: #BBB;
+	float: center;
+	margin: 3px auto;
+}
+
+.icon-80 {
+	width: 140px;
+	height: 140px;
+	display: flex;
+	align-content: center;
+	margin: auto 2px;
+	position: relative;
+}
+
+
+.linha-amarela {
+	width: 300px;
+	height: 1px;
+	background-color: #ffcc00;
+	text-align: left;
+}
+.bg-sicredi02{
+	background-color: #D7E6C8;
+}
+
+.bg-sicredi03{
+	background-color: #006633;
+}
+
+.bg-sicredi01{
+	background-color: #66cc33;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
+
+
+.tracoverdeH {
+	width: 1px;
+	height: 58px;
+	background-color: #66cc33;
+	margin: 5px auto;
+}
+
+
+
+/*Esquema do Modal */
+.circle{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: "center";
+}
+.circle h3{
+	font-size: 40px;
+}
+
+h3{
+	color: #66cc33;
+	font-weight: 300px;
+}
+
+.cor {
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #66cc33;
+	border-radius: 4px 4px 4px 4px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+}
+.cor a p {
+	font: 18px 'calibri', regular;
+	color: #FFF;
+	font-weight: 700;
+	text-align: center;
+}
+.cor:hover {
+	background-color: #006633;
+}
+
+.tsts{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@media (max-width: 450px)
+{
+	.tracoverdeH{
+		display: none;
+	}	
+}
+
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px, 0, 0);
+	transition: .3s;
+}
+
+.animeStart {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
