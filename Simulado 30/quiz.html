@@ -1,0 +1,120 @@
+<html lang="PT-BR">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="quiz.css" rel="stylesheet" media="screen">
+	<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="vendor/animate.css-master/animate.css">
+	<title> Simulado CPA-20</title>
+</head>
+
+<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-sanitize.min.js"></script>
+
+	<script src="quiz.js"></script>
+
+	<div class="container">
+		<section ng-app="ngQuiz" ng-controller="ngQuizController" class="quiz">
+			<image-preload></image-preload>
+			<div class="progress" ng-if="quizProgress.inProgress && quizProgress.currentQuestion <= quizProgress.lastQuestion">
+				<span ng-cloak class="counter">Question {{quizProgress.currentQuestionFriendly}} of {{quizProgress.lastQuestion}}</span>
+				<div class="progress-bar" progress-bar></div>
+			</div>
+			<div class="content">
+				<!-- intro -->
+				<section ng-cloak class="intro fade-in" ng-if="!quizProgress.loading && !quizProgress.inProgress && !quizProgress.finished">
+					<div ng-cloak class="row welcome">
+<!-- 						<div class="col-12 d-flex justify-content-center">
+							
+							<h1>{{::quizMetadata.title}}</h1>
+							<p>{{::quizMetadata.intro}}</p>
+							
+						</div> -->
+						<div class="mx-auto my-auto">
+							<img ng-src="{{quizMetadata.introImg}}" />
+			<!-- 				<aside class="figure-caption text-xs-right" ng-if="quizMetadata.introImgCredit"> {{::quizMetadata.introImgCredit}}</aside> -->
+						</div>
+					</div>
+					<div class="row py-4">
+						<button class="btn btn-success mx-auto " ng-click="startQuiz()">COMEÇAR</button>
+					</div>
+				</section>
+
+				<!-- question list -->
+				
+				<section ng-cloak class="fade-in question" ng-if="quizProgress.inProgress && quizProgress.currentQuestion <= quizProgress.lastQuestion">
+				<h6 class="responda">Responda:</h6>
+					<div animate-progression>
+						
+						<div class="text-center">
+							<img class="img-responsive" ng-src="{{quizQuestions[quizProgress.currentQuestion].questionImg}}" />
+						</div>
+
+						<h5 class="question-content">{{quizQuestions[quizProgress.currentQuestion].question}}</h5>
+						<div class="question-options">
+							<div ng-repeat="option in quizQuestions[quizProgress.currentQuestion].options | orderBy: '-'">
+								<div class="option" ng-class="{'wrong': quizQuestions[quizProgress.currentQuestion].answerChecked && option.selected && !option.correct, 'correct': option.correct && quizQuestions[quizProgress.currentQuestion].answerChecked, 'dim': quizQuestions[quizProgress.currentQuestion].answerChecked}">
+									<input type="radio" name="option" id="{{$index}}" ng-click="answerQuestion({selected: option.name})" ng-disabled="quizQuestions[quizProgress.currentQuestion].answerChecked">
+									<label for="{{$index}}"><p>{{option.name}}</p></label>
+								</div>
+								<div class="row feedback" ng-if="quizQuestions[quizProgress.currentQuestion].answerChecked && option.correct">
+									<span ng-bind-html="quizQuestions[quizProgress.currentQuestion].feedback"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<button ng-if="quizProgress.currentQuestion === -1" class="btn btn-primary" ng-click="startQuiz()">Start Quiz</button>
+							<button ng-if="quizQuestions[quizProgress.currentQuestion].answerChecked && quizProgress.currentQuestionFriendly !== quizProgress.lastQuestion" class="btn btn-primary pull-right" ng-click="nextQuestion()">PRÓXIMA</button>
+							<button ng-if="!quizQuestions[quizProgress.currentQuestion].answerChecked" ng-disabled="!quizQuestions[quizProgress.currentQuestion].answered" class="btn btn-primary pull-right" ng-click="checkAnswer()">VERIFICAR</button>
+						</div>
+					</div>
+
+					<div class="get-my-results text-center" ng-if="quizProgress.currentQuestionFriendly === quizProgress.lastQuestion && quizQuestions[quizProgress.currentQuestion].answerChecked">
+						<button class="pulse btn yellow btn-primary" ng-click="getScore()">VER MEU RESULTADO</button>
+					</div>
+				</section>
+
+				<section class="loading" ng-if="quizProgress.loading || quizProgress.calculatingScore">
+					<div class="loader"></div>
+				</section>
+
+				<section class="fade-in" ng-if="!quizProgress.calculatingScore && !quizProgress.inProgress && quizProgress.currentQuestionFriendly === quizProgress.lastQuestion">
+					<div class="results">
+						<div class="text-center">
+							<h1>Resultado</h1>
+							<p>Seu percentual de acerto foi de:</p>
+							<h2>{{score}}%</h2>
+							<p>{{message}}</p>
+
+						</div>
+					</div>
+
+					<!--
+					<div class="text-center">
+						<button class="start-over btn btn-success" ng-click="startOver()"><i class="fa fa-repeat" aria-hidden="true"></i>Try Again</button>
+					</div>
+					-->
+				</section>
+					</div>
+		</section>
+	</div>
+	<footer></footer>
+
+
+
+</body>
+
+</html>
